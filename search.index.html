@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Чудернацькі Автомобілі Пошук</title>
+  <style>
+    #body {
+      background-color: gray;
+    }
+
+    #header {
+      font-style: oblique;
+      color: brown;
+    }
+
+    #main {
+      font-style: oblique;
+      color: darkgreen;
+    }
+
+    #footer {
+      font-style: oblique;
+      font-size: 40px;
+    }
+  </style>
+</head>
+
+<body id="body">
+  <header id="header">
+    <h1>Пошук</h1>
+  </header>
+  <main id="main">
+    <form action="https://fom.in.ua/echo">
+      <h2>Тип Кузова</h2>
+      <ol>
+        <li><label><input type="radio" name="tk">Классний</label></li>
+        <li><label><input type="radio" name="tk">Чудовий</label></li>
+        <li><label><input type="radio" name="tk">Божевільний</label></li>
+        <li><label><input type="radio" name="tk">Звичайний</label></li>
+        <li><label><input type="radio" name="tk">Залізній</label></li>
+        <li><label><input type="radio" name="tk">Неймовірний</label></li>
+      </ol>
+      <h2>Марка Авто</h2>
+      <ul>
+        <li><label><input type="radio" name="ma">іномарка</label></li>
+        <li><label><input type="radio" name="ma">наша рідна</label></li>
+        <li><label><input type="radio" name="ma">міжгалактична</label></li>
+        <li><label><input type="radio" name="ma">неопізнана</label></li>
+      </ul>
+      <h2>Країна виробник</h2>
+      <ul>
+        <li><label><input type="radio" name="kv">Лапландія</label></li>
+        <li><label><input type="radio" name="kv">Нарнія</label></li>
+        <li><label><input type="radio" name="kv">Азгард</label></li>
+        <li><label><input type="radio" name="kv">Плутон</label></li>
+      </ul>
+      <h2>Ціна</h2>
+      <p>
+        <select>
+          <option>1000</option>
+          <option>2000</option>
+          <option>3000</option>
+          <option>4000</option>
+          <option>5000</option>
+        </select>
+      </p>
+      <h2>Рік Випуску</h2>
+      <p>
+        <select>
+          <option>1996</option>
+          <option>2000</option>
+          <option>2010</option>
+          <option>2015</option>
+          <option>2020</option>
+        </select>
+      </p>
+      <h2>Стан</h2>
+      <ul>
+        <li><label><input type="checkbox" name="ch">Классний форкоп</label></li>
+        <li><label><input type="checkbox" name="ch">Добра в салоні</label></li>
+        <li><label><input type="checkbox" name="ch">З іншої галактики</label></li>
+        <li><label><input type="checkbox" name="ch">Деревяна</label></li>
+        <li><label><input type="checkbox" name="ch">Трикотажна криша</label></li>
+        <li><label><input type="checkbox" name="ch">Не дуже красива</label></li>
+      </ul>
+      <h2>Тип топлива</h2>
+      <label>
+        <input type="radio" name="radio">
+        Не стандартний
+      </label>
+      <label>
+        <input type="radio" name="radio" checked>
+        Стандартний
+      </label>
+      <h2>Тип коробки передач</h2>
+      <label>
+        <input type="radio" name="radio" checked>
+        Картонна
+      </label>
+      <label>
+        <input type="radio" name="radio">
+        Автотравмат
+      </label>
+      <h2>Колір</h2>
+      <p>
+        <select>
+          <option>Небесно блакитний</option>
+          <option>Смугляво Жовтий</option>
+          <option>Неймовірно карсивий</option>
+          <option>Занадто привабливий</option>
+        </select>
+      </p>
+      <h2>Комфорт</h2>
+      <p>
+        <select multiple>
+          <option>Ілюмінатори</option>
+          <option>LED Підсвітка</option>
+          <option>Неймовірний</option>
+          <option>Чохли зі шкіри президента расеи</option>
+          <option>Дворнікі з вусів лукашенка</option>
+        </select>
+      <h2><label for="textarea"> Ваш Коментар</label></h2>
+      <p><textarea id="textarea" cols="30" rows="10" placeholder="Ваш коментар"></textarea></p>
+      <p><input type="submit" value="Обрав"></p>
+    </form>
+  </main>
+  <footer id="footer">
+    <h4>Таких Автомобілів ти ще не бачив</h4>
+  </footer>
+</body>
+
+</html>
